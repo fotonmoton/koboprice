@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix",
-    "build": "esbuild lib/index.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --outfile=dist/index.js",
+    "build": "esbuild lib/index.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11 --outfile=dist/index.js",
     "watch-build": "npm run build -- --watch",
-    "watch-ext": "web-ext run",
+    "watch-ext": "web-ext run --start-url kobo.com",
     "watch": "concurrently npm:watch-build npm:watch-ext"
   },
   "author": "",
@@ -26,6 +26,7 @@
     "web-ext": "^8.2.0"
   },
   "dependencies": {
-    "currency.js": "^2.0.4"
+    "currency.js": "^2.0.4",
+    "date-fns": "^3.6.0"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "Kobo Price",
+  "description": "Lowest book price finder",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "js": ["dist/index.js"],
+      "run_at": "document_end",
+      "matches": [
+        "https://www.kobo.com/*/*/ebook/*",
+        "https://www.kobo.com/*/*/audiobook/*"
+      ]
+    }
+  ]
+}

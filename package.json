@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix",
-    "build": "esbuild lib/index.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11 --outfile=dist/koboprice.js",
+    "build": "esbuild lib/index.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11 --outfile=dist/index.js",
     "watch-build": "npm run build -- --watch",
     "watch-ext": "web-ext run --start-url kobo.com",
     "watch": "concurrently npm:watch-build npm:watch-ext",

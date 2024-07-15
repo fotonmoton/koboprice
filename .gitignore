@@ -2,3 +2,4 @@ node_modules
 .vscode
 web-ext-artifacts
 .amo-upload-uuid
+dist

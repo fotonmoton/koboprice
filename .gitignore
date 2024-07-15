@@ -1,5 +1,4 @@
 node_modules
-dist
 .vscode
 web-ext-artifacts
 .amo-upload-uuid

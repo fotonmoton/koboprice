@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "currency.js": "^2.0.4",
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "preact": "^10.22.1"
   }
 }

@@ -4,7 +4,7 @@ import globals from "globals";
 
 export default [
   {
-    ignores: ["dist"],
+    ignores: ["dist", "userscript"],
   },
   eslintPluginPrettierRecommended,
   js.configs.recommended,

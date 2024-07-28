@@ -12,8 +12,8 @@
     "watch-ext": "web-ext run --start-url https://www.kobo.com/ww/en/ebook/foundation-the-foundation-trilogy-book-1-1",
     "watch": "concurrently npm:watch-bundle npm:watch-ext",
     "build-userscript": "cat userscript/koboprice.meta.js dist/index.js > userscript/koboprice.user.js",
-    "ext-build": "web-ext build",
-    "build-all": "npm run bundle && npm run build-userscript && npm run ext-build"
+    "build-ext": "web-ext build",
+    "build-all": "npm run bundle && npm run build-userscript && npm run build-ext"
   },
   "author": "",
   "license": "ISC",

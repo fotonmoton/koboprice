@@ -13,7 +13,7 @@
     "watch": "concurrently npm:watch-bundle npm:watch-ext",
     "build-userscript": "cat userscript/koboprice.meta.js dist/index.js > userscript/koboprice.user.js",
     "build-ext": "web-ext build",
-    "build-all": "npm run bundle && npm run build-userscript && npm run build-ext"
+    "build-all": "npm run bundle && npm run build-userscript && rm -rf web-ext-artifacts && npm run build-ext"
   },
   "author": "",
   "license": "ISC",

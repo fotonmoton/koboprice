@@ -1,7 +1,7 @@
 {
   "name": "Kobo Price",
   "description": "Compare ebook & audiobook prices across all Kobo country stores. Click the PRICES button in the bottom of the screen to see prices sorted and converted to USD.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "manifest_version": 3,
   "content_scripts": [
     {

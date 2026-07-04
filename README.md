@@ -1,30 +1,41 @@
 
 # :dollar: Kobo Price
 
-Helps you find the lowest book price on kobo.com.
+Compare ebook and audiobook prices across all Kobo country stores.
 
 ![example](./img/example.gif)
 
 ## Installation
-You can install this script in several ways:
 
 - [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/kobo-price)
 - [Chrome extension](https://chromewebstore.google.com/detail/kobo-price/gjiadglcgiidfphjijgeellagidbkiah)
 - [Userscript](https://raw.githubusercontent.com/fotonmoton/koboprice/master/userscript/koboprice.user.js)
 
 ## Usage
-On kobo.com, the book price for each country could be different. This script will fetch all book prices, convert them to USD at today's rate, sort them, and show to you as a list. Then you can change your billing address to the country whose price you like and proceed to checkout.
 
-- Go to the book/audiobook page you want to buy
-- wait a couple of minutes until all the prices are loaded (you should see the progress on the right side of the book page)
-- get the list of prices sorted and converted to USD
+Kobo shows different prices for the same book depending on your country.
+This extension fetches prices from every Kobo store, converts them to
+USD using today's exchange rate, and displays them sorted from cheapest
+to most expensive.
+
+1. Go to any ebook or audiobook page on kobo.com
+2. Click the **PRICES** button in the bottom of the screen
+3. A panel expands showing a country list with checkboxes — deselect
+   countries you don't care about
+4. Click **Load prices** and wait for all prices to load (progress is
+   shown as a percentage)
+5. The list is sorted by converted USD price — click any country name
+   to open that store's page for the book
+6. Change your billing address to the cheapest country and check out
 
 ## Build
 
-All artifacts are based on the `dist/index.js` bundle. To get it, run `npm run bundle`. To get the web extension archive, run `npm run build-ext`. To get the userscript, run `npm run build-userscript`.
-
-To get all the above:
+All artifacts are produced from the `dist/index.js` bundle.
 
 ```sh
-npm install && npm build-all
+npm install
+npm run bundle           # build dist/index.js
+npm run build-ext        # build the web extension archive
+npm run build-userscript # build the userscript
+npm run build-all        # run all three above
 ```
